@@ -1,0 +1,85 @@
+/* Base Theme / Colors */
+.col1 .widget 									{background:#fff799;}
+.col2 .widget 									{background:#c4df9b;}
+.col3 .widget 									{background:#f69679;}
+.col4 .widget 									{background:#7accc8;}
+#left-sidebar, #right-sidebar, #main-body		{background:#efefef;}
+#block1											{background:#ffffee;}
+#block2											{background:#eeffee;}
+
+/* Basics */
+.widget						{padding:5px; margin:5px 0;}
+section						{overflow:hidden; }
+
+/* Aesthetics; No meaning here, just OCD getting the best of me */
+body						{font:13px/1.4em sans-serif;}
+p							{margin:0 5px 1em 5px;}
+
+/* Grid Globals */
+.col1,.col2,.col3,.col4{}
+.col1{}
+.col2{}
+.col3{}
+.col4{}
+
+/* The media */
+@media screen and (max-width: 480px){
+	/* Smart Phones */
+	body 					{background:#aaa;}
+	#left-sidebar, 
+	#main-body, 
+	#right-sidebar 			{display:block; width:100%;}
+	#main-body				{margin-left:0%;}
+}/*/mediaquery*/
+@media screen and (min-width: 481px){
+	/* Tablets */
+	body 					{background:#bbb;}
+	#left-sidebar			{float:left; width:19%;}
+	#main-body				{float:left; width:52%; margin-left:2%;}
+	#right-sidebar			{float:right; width:25%;}
+}/*/mediaquery*/
+@media screen and (min-width: 960px){
+	/* 17" - 19" screen */
+	body 					{background:#ccc;}
+	#right-sidebar .col1,
+	#right-sidebar .col2	{width:100%; display:block;}
+	#right-sidebar .col3	{width:48%; float:left;} 
+	#right-sidebar .col4	{width:47%; float:right;}
+}/*/mediaquery*/
+@media screen and (min-width: 1280px){
+	/* 21" screen */
+	body 					{background:#ddd;}
+	#left-sidebar			{width:13%;}
+
+	#main-body				{width:54%;}
+	
+	#right-sidebar 			{width:29%}
+	#right-sidebar .col1, 
+	#right-sidebar .col3	{width:48%; float:left;}
+	#right-sidebar .col2, 
+	#right-sidebar .col4	{width:47%; float:right;}
+}/*/mediaquery*/
+@media screen and (min-width: 1600px){
+	/* 21" Maximized / Dual Monitors */
+	body 					{background:#eee;}
+	#left-sidebar			{width:13%}
+	
+	#main-body				{width:54%}
+	#main-body .col1		{width:48%; float:left;}
+	#main-body .col2		{width:48%; float:right;}
+
+	#right-sidebar 			{width:29%}
+	#right-sidebar .col1	{width:100%; display:block;}
+	#right-sidebar .col2	{width:32%; float:left;}
+	#right-sidebar .col3	{width:32%; float:left; margin-left:2%;}
+	#right-sidebar .col4	{width:32%; right}	
+}/*/mediaquery*/
+@media screen and (min-width: 2700px){
+	/* Dual Monitors, full screen */
+	body					{font-size:1.05em;}
+	#left-sidebar			{width:9%;}
+
+	#main-body				{width:58%;}
+		#block1					{width:49%; float:left;}
+		#block2					{width:48%; float:right;}
+}/*/mediaquery*/
